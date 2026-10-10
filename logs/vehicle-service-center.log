@@ -1,0 +1,108 @@
+2026-10-10T10:13:04.745+05:30  WARN 19820 --- [VehicleServiceCenter] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h32m34s561ms871µs200ns).
+2026-10-10T10:13:51.699+05:30  WARN 19820 --- [VehicleServiceCenter] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s35ms402µs800ns).
+2026-10-10T10:36:41.934+05:30  INFO 9124 --- [VehicleServiceCenter] [main] c.e.v.VehicleServiceCenterApplication    : Starting VehicleServiceCenterApplication using Java 17.0.12 with PID 9124 (C:\Users\SELVARAJU.N\Documents\workspace-spring-tools-for-eclipse-5.0.1.RELEASE\VehicleServiceCenter\target\classes started by SELVARAJU.N in C:\Users\SELVARAJU.N\Documents\workspace-spring-tools-for-eclipse-5.0.1.RELEASE\VehicleServiceCenter)
+2026-10-10T10:36:41.940+05:30 DEBUG 9124 --- [VehicleServiceCenter] [main] c.e.v.VehicleServiceCenterApplication    : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-10T10:36:41.942+05:30  INFO 9124 --- [VehicleServiceCenter] [main] c.e.v.VehicleServiceCenterApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T10:36:44.340+05:30  INFO 9124 --- [VehicleServiceCenter] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T10:36:44.513+05:30  INFO 9124 --- [VehicleServiceCenter] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 9 JPA repository interfaces.
+2026-10-10T10:36:46.260+05:30  INFO 9124 --- [VehicleServiceCenter] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T10:36:46.294+05:30  INFO 9124 --- [VehicleServiceCenter] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T10:36:46.295+05:30  INFO 9124 --- [VehicleServiceCenter] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-10T10:36:46.440+05:30  INFO 9124 --- [VehicleServiceCenter] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4415 ms
+2026-10-10T10:36:46.931+05:30  INFO 9124 --- [VehicleServiceCenter] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T10:36:47.080+05:30  INFO 9124 --- [VehicleServiceCenter] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-10T10:36:48.087+05:30  INFO 9124 --- [VehicleServiceCenter] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T10:36:48.171+05:30  INFO 9124 --- [VehicleServiceCenter] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T10:36:49.099+05:30  INFO 9124 --- [VehicleServiceCenter] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@401002ce
+2026-10-10T10:36:49.105+05:30  INFO 9124 --- [VehicleServiceCenter] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T10:36:49.370+05:30  INFO 9124 --- [VehicleServiceCenter] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/vehicle_service_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: vehicle_service_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T10:36:51.866+05:30  INFO 9124 --- [VehicleServiceCenter] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T10:36:52.204+05:30  INFO 9124 --- [VehicleServiceCenter] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T10:36:52.360+05:30  INFO 9124 --- [VehicleServiceCenter] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T10:36:52.802+05:30 DEBUG 9124 --- [VehicleServiceCenter] [main] c.e.v.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-10-10T10:36:52.932+05:30  INFO 9124 --- [VehicleServiceCenter] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-10T10:36:54.962+05:30  WARN 9124 --- [VehicleServiceCenter] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T10:36:56.716+05:30  WARN 9124 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'vehicles' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:36:56.725+05:30  WARN 9124 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'mechanics' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:36:56.725+05:30  WARN 9124 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'serviceRequests' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:36:56.726+05:30  WARN 9124 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'invoices' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:36:56.727+05:30  WARN 9124 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'parts' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:36:56.727+05:30  WARN 9124 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'customers' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:36:56.992+05:30  INFO 9124 --- [VehicleServiceCenter] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-10-10T10:36:57.177+05:30  INFO 9124 --- [VehicleServiceCenter] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-10T10:36:57.201+05:30  INFO 9124 --- [VehicleServiceCenter] [main] c.e.v.VehicleServiceCenterApplication    : Started VehicleServiceCenterApplication in 16.276 seconds (process running for 17.471)
+2026-10-10T10:36:57.499+05:30  WARN 9124 --- [VehicleServiceCenter] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T10:36:57.500+05:30  WARN 9124 --- [VehicleServiceCenter] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T10:39:58.200+05:30  INFO 9124 --- [VehicleServiceCenter] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T10:39:58.201+05:30  INFO 9124 --- [VehicleServiceCenter] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T10:39:58.205+05:30  INFO 9124 --- [VehicleServiceCenter] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-10-10T10:47:08.373+05:30  INFO 9124 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-10-10T10:47:08.391+05:30  INFO 9124 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T10:47:08.784+05:30  INFO 9124 --- [VehicleServiceCenter] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T10:47:08.811+05:30  INFO 9124 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T10:47:08.823+05:30  INFO 9124 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T10:47:08.828+05:30  INFO 9124 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-10T10:47:13.347+05:30  INFO 13920 --- [VehicleServiceCenter] [main] c.e.v.VehicleServiceCenterApplication    : Starting VehicleServiceCenterApplication using Java 17.0.12 with PID 13920 (C:\Users\SELVARAJU.N\Documents\workspace-spring-tools-for-eclipse-5.0.1.RELEASE\VehicleServiceCenter\target\classes started by SELVARAJU.N in C:\Users\SELVARAJU.N\Documents\workspace-spring-tools-for-eclipse-5.0.1.RELEASE\VehicleServiceCenter)
+2026-10-10T10:47:13.356+05:30 DEBUG 13920 --- [VehicleServiceCenter] [main] c.e.v.VehicleServiceCenterApplication    : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-10T10:47:13.358+05:30  INFO 13920 --- [VehicleServiceCenter] [main] c.e.v.VehicleServiceCenterApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T10:47:15.645+05:30  INFO 13920 --- [VehicleServiceCenter] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T10:47:15.796+05:30  INFO 13920 --- [VehicleServiceCenter] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 9 JPA repository interfaces.
+2026-10-10T10:47:17.430+05:30  INFO 13920 --- [VehicleServiceCenter] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T10:47:17.461+05:30  INFO 13920 --- [VehicleServiceCenter] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T10:47:17.462+05:30  INFO 13920 --- [VehicleServiceCenter] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-10T10:47:17.598+05:30  INFO 13920 --- [VehicleServiceCenter] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4150 ms
+2026-10-10T10:47:18.070+05:30  INFO 13920 --- [VehicleServiceCenter] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T10:47:18.215+05:30  INFO 13920 --- [VehicleServiceCenter] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-10T10:47:19.405+05:30  INFO 13920 --- [VehicleServiceCenter] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T10:47:19.488+05:30  INFO 13920 --- [VehicleServiceCenter] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T10:47:20.158+05:30  INFO 13920 --- [VehicleServiceCenter] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b529d42
+2026-10-10T10:47:20.164+05:30  INFO 13920 --- [VehicleServiceCenter] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T10:47:20.365+05:30  INFO 13920 --- [VehicleServiceCenter] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/vehicle_service_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: vehicle_service_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T10:47:22.839+05:30  INFO 13920 --- [VehicleServiceCenter] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T10:47:23.040+05:30  INFO 13920 --- [VehicleServiceCenter] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T10:47:23.198+05:30  INFO 13920 --- [VehicleServiceCenter] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T10:47:23.621+05:30 DEBUG 13920 --- [VehicleServiceCenter] [main] c.e.v.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-10-10T10:47:23.756+05:30  INFO 13920 --- [VehicleServiceCenter] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-10T10:47:25.714+05:30  WARN 13920 --- [VehicleServiceCenter] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T10:47:27.361+05:30  WARN 13920 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'vehicles' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:47:27.370+05:30  WARN 13920 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'mechanics' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:47:27.371+05:30  WARN 13920 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'serviceRequests' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:47:27.371+05:30  WARN 13920 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'invoices' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:47:27.372+05:30  WARN 13920 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'parts' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:47:27.373+05:30  WARN 13920 --- [VehicleServiceCenter] [main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'customers' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-10T10:47:27.619+05:30  INFO 13920 --- [VehicleServiceCenter] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-10-10T10:47:27.797+05:30  INFO 13920 --- [VehicleServiceCenter] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-10T10:47:27.816+05:30  INFO 13920 --- [VehicleServiceCenter] [main] c.e.v.VehicleServiceCenterApplication    : Started VehicleServiceCenterApplication in 15.419 seconds (process running for 16.583)
+2026-10-10T10:47:28.069+05:30  WARN 13920 --- [VehicleServiceCenter] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T10:47:28.070+05:30  WARN 13920 --- [VehicleServiceCenter] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T10:47:35.001+05:30  INFO 13920 --- [VehicleServiceCenter] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T10:47:35.002+05:30  INFO 13920 --- [VehicleServiceCenter] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T10:47:35.007+05:30  INFO 13920 --- [VehicleServiceCenter] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-10-10T10:57:29.950+05:30  INFO 13920 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-10-10T10:57:30.318+05:30  INFO 13920 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T10:57:30.744+05:30  INFO 13920 --- [VehicleServiceCenter] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T10:57:30.850+05:30  INFO 13920 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T10:57:30.934+05:30  INFO 13920 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T10:57:30.954+05:30  INFO 13920 --- [VehicleServiceCenter] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
